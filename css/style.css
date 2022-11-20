@@ -528,7 +528,8 @@ width:100%;
     color: #000000;
 }
 .cstm_navbar ul li .cstm_multi_dropdown.storage_guide_dropdown li a:hover,
-.cstm_navbar ul li .cstm_multi_dropdown.storage_guide_dropdown li a.active{
+.cstm_navbar ul li .cstm_multi_dropdown.storage_guide_dropdown li a.active,
+.cstm_navbar ul li .cstm_multi_dropdown.storage_guide_dropdown li.active a{
     color: #fbae09;
 }
 .cstm_multi_dropdown.storage_guide_dropdown li a{
@@ -540,6 +541,15 @@ width:100%;
 .cstm_multi_dropdown.storage_guide_dropdown ul{
     max-width: 200px;
     border-right: 1px solid #000;
+    position: relative;
+}
+.cstm_multi_dropdown.storage_guide_dropdown li{
+    position: initial;
+}
+.cstm_multi_dropdown.storage_guide_dropdown li.active .hover_content{
+    opacity: 1;
+    visibility: visible;
+    top:0%;
 }
 
 .hover_content{
@@ -547,6 +557,8 @@ width:100%;
     position: absolute;
     left: 230px;
     width: 455px;
+    opacity: 0;
+    visibility: hidden;
     
 }
 .hover_content p{
