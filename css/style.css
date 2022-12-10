@@ -149,10 +149,21 @@ width:100%;
     visibility: hidden;
     transition: 0.2s ease-in-out;
 }
+
 .cstm_navbar > ul li:hover .cstm_multi_dropdown{
     opacity: 1;
     visibility: visible;
+   
 }
+@media (min-width:991px){
+    .cstm_navbar > ul li .cstm_multi_dropdown{
+        display: none;
+    }
+    .cstm_navbar > ul li:hover .cstm_multi_dropdown{
+        display: block;
+    }
+}
+
 /*HEADER END CSS*/
 /**************/
 
